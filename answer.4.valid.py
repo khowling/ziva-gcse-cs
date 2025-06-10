@@ -18,9 +18,9 @@ journeys = [
 
 def pilotValid(pilot_code):
     total_hours: float = 0
-    for journey in journeys:
-        if journey[0] == pilot_code:
-            total_hours += float(journey[1])
+    for i in range(0,  len(journeys)):    
+        if journeys[i][0] == pilot_code:
+            total_hours += float(journeys[i][1])
     
     if total_hours <= 9:
         return "valid"

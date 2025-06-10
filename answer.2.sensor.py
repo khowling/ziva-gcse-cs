@@ -50,9 +50,9 @@ input_date = input("Enter a date (DD/MM/YYYY): ")
 # Calculate total seconds for the given date
 total_seconds: int = 0
 
-for event in events:
-    if event[0] == input_date:
-        total_seconds += int(event[3]) 
+for i in range(0,  len(events)):
+    if events[i][0] == input_date:
+        total_seconds += int(events[i][3]) 
 
 # Output the result
 if total_seconds > 0:

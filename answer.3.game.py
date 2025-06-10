@@ -5,8 +5,8 @@ numbers = [''] * 100
 
 def display_count_of_free_numbers():
     count = 0
-    for number in numbers:
-        if number == '':
+    for i in range(0,100):
+        if numbers[i] == '':
             count += 1
     print(f"There are {count} free numbers available.")
     
